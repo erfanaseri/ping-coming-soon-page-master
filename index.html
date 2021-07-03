@@ -11,6 +11,10 @@
       sizes="32x32"
       href="src/img/favicon-32x32.png"
     />
+    <link
+      rel="stylesheet"
+      href="node_modules/@fortawesome/fontawesome-free/css/all.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,8 +32,52 @@
   </style> -->
   </head>
   <body>
-    We are launching soon! Subscribe and get notified Notify Me &copy; Copyright
-    Ping. All rights reserved.
+    <div class="container">
+      <header class="header">
+        <img src="src/img/logo.svg" alt="logo" class="header__ping" />
+        <h1 class="header__main">
+          We are launching <span class="header__soon">soon!</span>
+        </h1>
+        <p class="header__sub">Subscribe and get notified</p>
+      </header>
+
+      <form action="#" class="form">
+        <input
+          type="email"
+          name="e-mail"
+          id="e-mail"
+          class="form__e-mail"
+          placeholder="Your email address..."
+          required
+        />
+
+        <input
+          type="button"
+          value="Notify Me"
+          class="form__button form__button--active"
+        />
+
+        <p class="form__error form__error--active">
+          Please provide a valid email address
+        </p>
+      </form>
+
+      <main class="main">
+        <img
+          src="src/img/illustration-dashboard.png"
+          alt="Main image"
+          class="main__img"
+        />
+      </main>
+
+      <footer class="footer">
+        <i class="fab fa-facebook footer__icon"></i>
+        <i class="fab fa-twitter footer__icon"></i>
+        <i class="fab fa-instagram footer__icon"></i>
+      </footer>
+
+      <p class="copy-right">&copy; Copyright Ping. All rights reserved.</p>
+    </div>
 
     <!-- <footer>
     <p class="attribution">
